@@ -9,17 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".chocolate"></activity>
-        <activity android:name=".yogurt" />
-        <activity android:name=".movie" />
-        <activity android:name=".music" />
-        <activity android:name=".DisplayMessageActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Splash">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".chocolate" />
+        <activity android:name=".yogurt" />
+        <activity android:name=".movie" />
+        <activity android:name=".music" />
+        <activity android:name=".DisplayMessageActivity"
+            >
+
+        </activity>
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

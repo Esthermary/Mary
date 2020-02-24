@@ -1,0 +1,7 @@
+nankya_esther_mary_2018/bit/083/ps
+
+<include stdio.h>
+int main(){
+printf("mom you are the best");
+return(void)
+}
