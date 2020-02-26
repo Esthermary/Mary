@@ -7,8 +7,8 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Message"
         android:id="@+id/messageTextView"
         android:textSize="40dp"
@@ -31,10 +31,10 @@
         android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/messageTextView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.28" />
 
     <Button
         android:id="@+id/closeButton"
@@ -73,24 +73,26 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/goodmorning"
-        tools:layout_editor_absoluteX="-40dp"
-        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="recycler"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="365dp"/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="@+id/closeButton"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="@+id/closeButton" />
+        android:layout_marginBottom="204dp"
+        android:text="MUSIC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
