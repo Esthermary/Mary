@@ -11,6 +11,6 @@
         android:padding="10dp"
         android:id="@+id/yogurtName"
         android:textColor="#000"
-        android:text="jluyfghgkhgdfxcvgkgufyjdghfx"/>
+        android:text="mum i love you"/>
 
 </LinearLayout>
