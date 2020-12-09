@@ -12,10 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Internalstorage"></activity>
+
         <receiver
             android:name=".MyReceiver"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true" />
 
         <activity android:name=".Splash">
             <intent-filter>
@@ -28,8 +30,8 @@
         <activity android:name=".yogurt" />
         <activity android:name=".movie" />
         <activity android:name=".music" />
-        <activity android:name=".DisplayMessageActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".DisplayMessageActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
