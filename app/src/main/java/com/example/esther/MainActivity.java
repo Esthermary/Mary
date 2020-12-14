@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,music.class);
+                Intent intent=new Intent(MainActivity.this,Music.class);
                 startActivity(intent);
             }
         });

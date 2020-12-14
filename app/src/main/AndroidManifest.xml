@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Internalstorage"></activity>
+        <activity android:name=".Music"></activity>
+        <activity android:name=".Internalstorage" />
 
         <receiver
             android:name=".MyReceiver"
@@ -29,9 +30,12 @@
         <activity android:name=".chocolate" />
         <activity android:name=".yogurt" />
         <activity android:name=".movie" />
-        <activity android:name=".music" />
         <activity android:name=".DisplayMessageActivity" />
         <activity android:name=".MainActivity" />
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true" />
     </application>
 
 </manifest>
