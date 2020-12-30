@@ -10,4 +10,12 @@
         app:showAsAction="always"
         android:title="moving"/>
 
+    <item android:id="@+id/map"
+        app:showAsAction="never"
+        android:title="map"/>
+
+    <item android:id="@+id/cp"
+        app:showAsAction="never"
+        android:title="content provider"/>
+
 </menu>

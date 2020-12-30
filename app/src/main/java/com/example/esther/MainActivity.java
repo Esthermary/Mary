@@ -80,10 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 return true;
             //}
-
-
-
-
             case R.id.elijah:
                 // startActivity(new Intent(this,menu2.class));
                 Intent intent2 = new Intent(Intent.ACTION_SEND);
@@ -94,6 +90,19 @@ public class MainActivity extends AppCompatActivity {
                 intent2.putExtra(Intent.EXTRA_TEXT, "this group is cool");
                 intent2.setType("message/rfc822");
                 startActivity(intent2);
+                return true;
+
+            case R.id.cp:
+                // startActivity(new Intent(this,menu2.class));
+                Intent cp = new Intent(this, LecturerProvider.class);
+                startActivity(cp);
+                return true;
+
+
+            case R.id.map:
+                // startActivity(new Intent(this,menu2.class));
+                Intent mp = new Intent(this, MapsActivity.class);
+                startActivity(mp);
                 return true;
 
 

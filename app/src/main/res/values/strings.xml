@@ -1,4 +1,5 @@
 <resources>
     <string name="goodmorning">my mum is the best</string>
     <string name="morning">my mum is the best</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
