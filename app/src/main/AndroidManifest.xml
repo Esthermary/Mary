@@ -7,9 +7,17 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the "MyLocation" functionality.
     -->
+    <!--
+         Android runtime permissions requested by the app to access andriod services
+    -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <!--
+         application tag allows definition of app characteristics and behaviour like app theme, 
+         activity global properties, app logo, name,etc
+    -->
 
     <application
         android:allowBackup="true"
@@ -27,6 +35,9 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
+        <!--
+         data that describes an api the app wants to access
+    -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
@@ -38,11 +49,17 @@
         <activity android:name=".Music" />
         <activity android:name=".Internalstorage" />
 
+        <!--
+         receiver definition to let android register the class that gets pending intents and prepare the specified class to receive them
+    -->
         <receiver
             android:name=".MyReceiver"
             android:enabled="true"
             android:exported="true" />
 
+        <!--
+         Initial activity launched by android
+    -->
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,16 +67,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <!--
+         activity definitions with the basic default properties
+    -->
         <activity android:name=".chocolate" />
         <activity android:name=".yogurt" />
         <activity android:name=".movie" />
         <activity android:name=".DisplayMessageActivity" />
         <activity android:name=".MainActivity" />
 
+        <!--
+         backround service definition to handle background functions
+    -->
         <service
             android:name=".MusicService"
             android:enabled="true" />
 
+        <!--
+         Content provider definition to allow app share its data with other apps on request
+    -->
         <provider
             android:name=".Provider"
             android:authorities="com.example.myapplication.Lecturer" />
